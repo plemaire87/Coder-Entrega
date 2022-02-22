@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  height: 100vh;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.navbar {
+  background-color: #155abf;
+  width: 100%;
+  height: 50px;
+}
+.navbar a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  margin: 0 8px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.enlacesnav {
+  display: flex;
+  align-items: center;
+  justify-items: space-around;
+}
+.rrss {
+  display: flex;
+  align-items: center;
+}
+.mainIndex {
+  background: linear-gradient(40deg, #45cafc, #303f9f);
+  width: 100%;
+  height: 100vh;
+}
+.mainTop {
+  padding-top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.titulo {
+  width: 400px;
+  color: white;
+}
+.titulo h1 {
+  margin-bottom: 20px;
+}
+.imgHotel img {
+  width: 400px;
+}
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #2196f3;
+  font-size: 20px;
+  color: lightcyan;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mainServicios {
+  display: flex;
+  flex-direction: column;
+  margin: 100px;
+  padding: 50px;
+  border: 1px solid black;
+}
+.mainServicios h2,
+h3 {
+  color: black;
+  margin: 5px 0;
+  text-align: center;
+}
+.mainServicios h2 {
+  margin: 45px;
+}
+.Servicios {
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  gap: 30px;
+  justify-items: center;
+}
+
+.descripcion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.descripcion p {
+  font-size: 1em;
+}
+.mainExperiencias{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experiencias{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  padding-top: 50px;
+}
+.experienciastextos{
+  width: 75%;
+}
+.experienciastextos h2{
+  font-size: 4vh;
+}
+.experienciastextos p{
+  margin: 30px 0 20px 0;
+  width: 75%;
+}
+.experienciastextos a{
+  text-decoration: none;
+  color: white;
+  background-color: #0e489f;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 2vh;
+}
+.mainFaqs{
+  background: linear-gradient(40deg, #45cafc, #303f9f);
+  height: auto;
+  padding-top: 100px;
+}
+.mainFaqs h2{
+  padding-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.mainFaqs p{
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 350px;
+}
+.mainFaqs a{
+  text-decoration: none;
+  display: inline-block;
+}
+.BotonFaqs{
+  text-decoration: none;
+  color: white !important;
+  background-color: #0e489f;
+  padding: 10px;
+  border-radius: 25px;
+  font-size: 2vh;
+}
+.contenedorBoton{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+.containerfluid{
+  background-color: lightgray;
+}
+.slider{
+  height: 500px;
+  background-color: lightgray;
+  margin: 0 100px 100px 100px;
+  padding-top: 100px;
+  display: flex;   
+}
+.contenedortextos{
+  border: 2px solid black;
+  height: 150px;
+  padding: 50px;
+}
+.nombregerente{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.tituloscontacto{
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #0e489f;
+}
+.containerForm{
+  height: 600px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+form{
+  border: 2px solid black;
+  padding: 50px;
+}
+/* Extra small devices (min-width: 320px) and (max-width: 600px) */
+@media screen and (min-width: 320px) and (max-width: 600px) {
+   body {
+    height: 100vh;
+    width: 120%;
+  }
+  .header{
+    justify-content: flex-start;
+  }
+  .navbar{
+    font-size: 1rem;
+  }
+  .enlacesnav{
+    display: none;
+  }
+  .rrss{
+    display: none;
+  }
+  .mainTop{
+    flex-direction: column;
+  }
+  .imgHotel{
+    justify-content: center;
+  }
+  .imgHotel img{
+    width: 50%;
+    height: auto;
+    margin-left: 20%;
+  }
+  .mainTop h1{
+    padding: 5px 30px;
+  }
+  .mainTop p{
+    padding: 5px 30px;
+  }
+  .mainIndex{
+    padding-bottom: 80px;
+  }
+  .Servicios {
+    display: flex;
+    flex-direction: column;
+    }
+  .mainServicios{
+    margin: 100px 60px;
+    padding: 20px;
+  }
+  .mainExperiencias{
+    margin: 30px;
+  }
+  .experiencias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .experienciastextos{
+    width: 90%;
+    padding-bottom: 10px;
+  }
+  .expecienciasImg{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+  .mainFaqs{
+    padding: 50px;
+  }
+  .mainFaqs h2{
+    padding-top: 30px;
+  }
+  .mainFaqs p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+  .slider{
+    height: 100vh;
+    background-color: lightgray;
+    margin: 0 100px 150px 100px;
+    padding-top: 100px;
+    display: flex;   
+  }
+  .contenedortextos{
+    border: none;
+  }
+  .containerForm{
+    min-height: 100vh;
+  }
+  Form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 50px 0;
+    border: none
+  }
+  .BotonEnviar{
+    margin-bottom: 50px;
+  }
+}
+/* Extra small devices (min-width: 601px) and (max-width: 767px) */
+@media screen and (min-width: 601px) and (max-width: 767px){
+  body {
+    height: 100vh;
+    width: 120%;
+  }
+  .header{
+    justify-content: space-between;
+  }
+  .enlacesnav{
+    display: none;
+  }
+  .rrss{
+    display: none;
+  }
+  .mainTop{
+    flex-direction: column;
+  }
+  .imgHotel img{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+  }
+  .mainTop h1{
+    padding: 5px 30px;
+  }
+  .mainTop p{
+    padding: 5px 30px;
+  }
+  .mainIndex{
+    padding-bottom: 80px;
+  }
+  .titulo {
+    width: 600px;
+    color: white;
+  }
+  .mainTop h1{
+    padding: 5px 0;
+  }
+  .mainTop p{
+    padding: 5px 0;
+  }
+  .Servicios {
+  display: flex;
+  flex-direction: column;
+  }
+  .mainExperiencias{
+    margin: 30px;
+  }
+  .experiencias{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .experienciastextos{
+    width: 90%;
+    padding-bottom: 10px;
+  }
+  .expecienciasImg{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+  }
+  .mainFaqs{
+    padding-top: 10px;
+
+  }
+  .mainFaqs h2{
+    padding-top: 70px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .mainFaqs p{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px 10px;
+  }
+  .BotonFaqs{
+    text-decoration: none;
+    color: white !important;
+    background-color: #0e489f;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 2vh;
+  }
+  .contenedortextos{
+    min-height: 100px;
+    padding-bottom: 50px;
+  }
+}
+
+/* Medium devices (min-width: 601px) and (max-width: 767px) */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    height: 100vh;
+    width: 120%;
+  }
+  .header{
+    justify-content: space-between;
+  }
+  .navbar{
+    font-size: 1rem;
+  }
+  .mainTop{
+    flex-direction: column;
+  }
+  .imgHotel img{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+  }
+  .mainTop h1{
+    padding: 5px 30px;
+  }
+  .mainTop p{
+    padding: 5px 30px;
+  }
+  .mainIndex{
+    padding-bottom: 80px;
+  }
+  .titulo {
+    width: 600px;
+    color: white;
+  }
+  .mainTop h1{
+    padding: 5px 0;
+  }
+  .mainTop p{
+    padding: 5px 0;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
