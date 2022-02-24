@@ -8,33 +8,34 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="js/style.js">
     <title>Proyecto Final</title>
 </head>
 <body>
     <header class="navbar sticky">
-            <div class="logo">
-                <img src="img/logo/rosac.png" alt="Logo de YOY Revenue">
-            </div>
-            <div class="enlacesnav">
-                <a href="index.html">Home</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="experiencias.html">Experiencias</a>
-                <a href="faqs.html">Preguntas Frecuentes</a>
-                <a href="testimonios.html">Testimonios</a>
-                <a href="#">Contacto</a>
-            </div>
-            <div class="rrss">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-facebook-square"></i>  </a>
-                <a href="#"><i class="fab fa-instagram-square"></i></a>
-            </div>
-    </header>
-<!-- Navbar -->
+        <div class="logo">
+            <img src="img/logo/rosac.png" alt="Logo de YOY Revenue">
+        </div>
+        <div class="enlacesnav">
+            <a href="index.html">Home</a>
+            <a href="servicios.html">Servicios</a>
+            <a href="experiencias.html">Experiencias</a>
+            <a href="#">Preguntas Frecuentes</a>
+            <a href="testimonios.html">Testimonios</a>
+            <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="rrss">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-facebook-square"></i>  </a>
+            <a href="#"><i class="fab fa-instagram-square"></i></a>
+        </div>
+</header>
+
         <div class="tituloscontacto">
             <h2>No dejes de entrar en contacto con nosotros.</h2> 
             <p>Estás a un click.</p>
         </div>
-        <div class="containerForm">
+        <!-- <div class="containerForm">
         <form>
             <label for="fname">Nombre: </label><input type="text" id="fname" name="fname" value="Juan Perez">
             <label for="email">Correo electrónico: </label><input type="email" id="email" value="mi_mail@mail.com">
@@ -58,7 +59,18 @@
             <br><br>
             <input type="submit" value="Enviar" class="BotonEnviar">
             </form>
+        </div> -->
+        <div class="containerForm">
+            <form id="contactus" action="" method="post">
+                <h3>Escríbenos. Encantados de poder conocerte</h3>
+                <fieldset> <input placeholder="Nombre" type="text" tabindex="1" required autofocus> </fieldset>
+                <fieldset> <input placeholder="E-mail" type="email" tabindex="2" required> </fieldset>
+                <fieldset> <input placeholder="Teléfono" type="tel" tabindex="3" required> </fieldset>
+                <fieldset> <textarea placeholder="Escriba aquí su mensaje..." tabindex="5" required></textarea> </fieldset>
+                <fieldset> <button name="submit" type="submit" id="contactus-submit" data-submit="...Enviando">Enviar ahora</button> </fieldset>
+            </form>
         </div>
+
     <footer>
         <h6>© 2020 Copyright: yoyrevenue.com</h6>
     </footer>

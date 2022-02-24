@@ -41,7 +41,6 @@ header {
 }
 .mainIndex {
   background: linear-gradient(40deg, #45cafc, #303f9f);
-  width: 100%;
   height: 100vh;
 }
 .mainTop {
@@ -151,24 +150,24 @@ h3 {
   border-radius: 25px;
   font-size: 2vh;
 }
-.mainFaqs{
+.MainFaqs{
   background: linear-gradient(40deg, #45cafc, #303f9f);
-  height: auto;
+  height: 100vh;
   padding-top: 100px;
 }
-.mainFaqs h2{
+.MainFaqs h2{
   padding-top: 10px;
   text-align: center;
   margin-bottom: 20px;
 }
-.mainFaqs p{
+.MainFaqs p{
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 5px 350px;
 }
-.mainFaqs a{
+.MainFaqs a{
   text-decoration: none;
   display: inline-block;
 }
@@ -212,16 +211,115 @@ h3 {
   align-items: center;
   color: #0e489f;
 }
-.containerForm{
-  height: 600px;
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.containerForm {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
 }
-form{
-  border: 2px solid black;
-  padding: 50px;
+
+#contactus {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 100px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+
+/* #contactus {} */
+
+#contactus h3 {
+  display: block;
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 10px
+}
+
+#contactus h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%
+}
+
+#contactus input[type="text"],
+#contactus input[type="email"],
+#contactus input[type="tel"],
+#contactus input[type="url"],
+#contactus textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px
+}
+
+#contactus input[type="text"]:hover,
+#contactus input[type="email"]:hover,
+#contactus input[type="tel"]:hover,
+#contactus input[type="url"]:hover,
+#contactus textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa
+}
+
+#contactus textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none
+}
+
+#contactus button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #f0715f;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px
+}
+
+#contactus button[type="submit"]:hover {
+  background: #f07150;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out
+}
+
+#contactus button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5)
+}
+
+#contactus input:focus,
+#contactus textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa
+}
+
+::-webkit-input-placeholder {
+  color: #888
+}
+
+:-moz-placeholder {
+  color: #888
+}
+
+::-moz-placeholder {
+  color: #888
+}
+
+:-ms-input-placeholder {
+  color: #888
 }
 /* Extra small devices (min-width: 320px) and (max-width: 600px) */
 @media screen and (min-width: 320px) and (max-width: 600px) {
@@ -321,6 +419,44 @@ form{
   .BotonEnviar{
     margin-bottom: 50px;
   }
+  .tituloscontacto{
+    font-size: 2vh;
+  }
+  .tituloscontacto h2, p{
+    max-width: 80%;
+    text-align: center;
+  }
+  .containerForm{
+    max-width: 80%;
+    margin: 50px auto;
+  }
+  #contactus{
+    padding: 0;
+    margin: 0;
+  }
+  #contactus h3{
+    max-width: 80%;
+    margin-left: 20px;
+    padding: 5px 0;
+  }
+  #contactus input[type="text"],
+#contactus input[type="email"],
+#contactus input[type="tel"],
+#contactus input[type="url"],
+#contactus textarea {
+  width: 80%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 20px 5px;
+  padding: 10px
+}
+  /* #contactus input{
+    max-width: 80%;
+    margin-left: 20px;
+  }
+  #contactus textarea{
+    max-width: 90%;
+  } */
 }
 /* Extra small devices (min-width: 601px) and (max-width: 767px) */
 @media screen and (min-width: 601px) and (max-width: 767px){
